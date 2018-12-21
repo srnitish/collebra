@@ -1,0 +1,8 @@
+.login_img{ background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url('/assets/img/login_img.jpg') no-repeat center center; height: 593px; width: 100%; }
+.login_img { position: relative; background-position: center center; background-repeat: no-repeat; background-size: cover; }
+.register-block{
+background: #f3f3fd;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #f3f3fd, #eee);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #f3f3fd, #eee); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.mat-card-content { display: block; margin-bottom: 0px!important; }

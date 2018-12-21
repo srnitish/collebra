@@ -1,0 +1,18 @@
+.mat-toolbar.mat-primary .btn-primary{ background-color: #4855b5!important;}
+.login-block{ float:left; width:100%; padding : 36px 0; }
+.ortext { padding: 4px; top: -13px; font-size: 12px; left: 40%; background: #fff; margin: 0 0 0 -16px; position: absolute; color: #666; }
+.orSec { margin: 15px 60px 12px; border-top: 1px solid #cecece; position: relative; }
+::placeholder{color: #666;font-size: 13px;}
+.chkbox-text{margin-top:3px;}
+.banner-sec{border-radius: 10px 0px 0px 10px; padding:0; color: #eee;}
+.container{background:#fff; border-radius: 10px; box-shadow:15px 20px 0px rgba(0,0,0,0.1);}
+.carousel-inner{border-radius:10px 0px 0px 10px;}
+.carousel-caption{text-align:left; left:5%;}
+.login-sec{padding: 30px 30px; position:relative;}
+.login-sec .copy-text{position:absolute; width:80%; bottom:20px; font-size:13px; text-align:center;}
+.login-sec h2{margin-bottom:30px; font-size: 20px; color: #666; font-weight: 700;}
+.login-sec h2:after{content:" "; width:100px; height:3px; background:#4855b5; display:block; margin-top:10px; border-radius:3px; margin-left:auto;margin-right:auto}
+.banner-text{width:70%; position:absolute; bottom:40px; padding-left:20px;}
+.banner-text h2{color:#fff; font-weight:600;}
+.banner-text h2:after{content:" "; width:100px; height:5px; background:#FFF; display:block; margin-top:20px; border-radius:3px;}
+.banner-text p{color:#fff;}

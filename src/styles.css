@@ -1,0 +1,19 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+html, body { box-sizing: border-box;overflow-x: hidden;font-family: Roboto,sans-serif!important;color: rgba(0,0,0,.87);line-height: 1.28;background: #f3f3fd;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #f3f3fd, #eee);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #f3f3fd, #eee); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: 100%;}
+.example-icon { padding: 0 14px;}
+.example-spacer { flex: 1 1 auto;}
+.mt-10, .my-10 { margin-top: 6rem!important;}
+label { color: #333!important; font-size: 13px;}
+i { line-height: 20px;}
+.font-sm{ font-size: 13px;}
+.fb { color: #3B5998; }
+.google{ color: #DD4A39}
+.brand-btn { background-color: #ff4500!important; border:2px solid #ff4500 }
+.brand-btn:hover{ background-color: #4855b5!important; border: 2px solid #4855b5}
+.control-container { display: flex; flex-direction: column; }
+.control-container > * { width: 100%; }
+.example-header-image { background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg'); background-size: cover; }
