@@ -16,26 +16,20 @@ export class MyErrorStateMatcher implements ErrorStateMatcher {
   }
 }
 
-
 @Component({
   selector: 'app-register',
   templateUrl: './register.component.html',
   styleUrls: ['./register.component.css']
 })
-
-
-
 export class RegisterComponent implements OnInit {
-  
 
   registerForm: FormGroup;
   matcher = new MyErrorStateMatcher();
   hide = true;
- 
   
   constructor(private formBuilder: FormBuilder) {
     this.registerForm = this.formBuilder.group({
-      firstName: ['',[Validators.pattern('^[a-zA-Z ]*$'), Validators.minLength(4)]],
+      firstName: ['', [Validators.pattern('^[a-zA-Z ]*$'), Validators.minLength(4)]],
       lastName: ['', Validators.required],
       email: ['', Validators.email],
       mobile:['', [Validators.required, Validators.minLength(10)]],

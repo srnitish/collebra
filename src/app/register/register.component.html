@@ -20,13 +20,13 @@
                           <!-- <input type="hidden" formControlName="$key"> -->
                           <mat-form-field floatLabel="never">
                               <input formControlName="firstName" matInput placeholder="First Name" autocomplete="off" required>
-                              <mat-error *ngIf="registerForm.hasError('required','firstName')">Enter First Name &amp;</mat-error>
-                              <mat-error *ngIf="registerForm.hasError('pattern','firstName')">Use alphabets only</mat-error>
+                              <mat-error *ngIf="registerForm.hasError('required',['firstName'])">Enter First Name</mat-error>
+                              <mat-error *ngIf="registerForm.hasError('pattern', ['firstName'])">Use alphabets only</mat-error>
                             </mat-form-field>
 
                           <mat-form-field floatLabel="never">
                             <input formControlName="lastName" matInput placeholder="Last Name" autocomplete="off" required>
-                            <mat-error *ngIf="registerForm.hasError('required','lastName')">Enter Last Name</mat-error>
+                            <mat-error *ngIf="registerForm.hasError('required',['lastName'])">Enter Last Name</mat-error>
                           </mat-form-field>
 
                           <mat-form-field floatLabel="never">
@@ -36,7 +36,7 @@
 
                           <mat-form-field floatLabel="never">
                             <input matInput placeholder="Password" formControlName="password" [type]="hide ? 'password' : 'text'" required>
-                            <mat-error *ngIf="registerForm.hasError('required','password')">Enter Password</mat-error>
+                            <mat-error *ngIf="registerForm.hasError('required',['password'])">Enter Password</mat-error>
                             <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
                           </mat-form-field>
                           
@@ -57,8 +57,8 @@
 
                           <mat-form-field floatLabel="never">
                               <input matInput placeholder="Mobile" formControlName="mobile" autocomplete="off" (keypress)="keyPress($event)" minlength=10 maxlength=10 required>
-                              <mat-error *ngIf="registerForm.hasError('required', 'mobile')">Phone can not be empty.</mat-error>
-                              <mat-error *ngIf="registerForm.hasError('minlength','mobile')">Minimum 10 characters needed.</mat-error>
+                              <mat-error *ngIf="registerForm.hasError('required', ['mobile'])">Phone can not be empty.</mat-error>
+                              <mat-error *ngIf="registerForm.hasError('minlength',['mobile'])">Minimum 10 characters needed.</mat-error>
                           </mat-form-field>
                         <mat-checkbox color="primary">Read Terms &amp; conditions</mat-checkbox>
                       </div>
