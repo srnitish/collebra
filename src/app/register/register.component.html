@@ -2,74 +2,8 @@
 <section>
   <div class="container-fluid">
     <div class="row">
-      <div class="login_img">
-          <div class="col-md-6 mx-auto text-center">
-            <!-- Form Starts -->
-            <form [formGroup]="registerForm">
-                <mat-card class="example-card mt-3">
-                    <!-- card header -->
-                    <mat-card-header>
-                      <mat-card-title>Register Form</mat-card-title>
-                    </mat-card-header>
-                    <!-- card header -->
-                    <!-- Divider -->
-                    <mat-divider></mat-divider>
-                    <!-- Divider -->
-                    <mat-card-content class="mt-3">
-                      <div class="control-container">
-                          <!-- <input type="hidden" formControlName="$key"> -->
-                          <mat-form-field floatLabel="never">
-                              <input formControlName="firstName" matInput placeholder="First Name" autocomplete="off" required>
-                              <mat-error *ngIf="registerForm.hasError('required',['firstName'])">Enter First Name</mat-error>
-                              <mat-error *ngIf="registerForm.hasError('pattern', ['firstName'])">Use alphabets only</mat-error>
-                            </mat-form-field>
-
-                          <mat-form-field floatLabel="never">
-                            <input formControlName="lastName" matInput placeholder="Last Name" autocomplete="off" required>
-                            <mat-error *ngIf="registerForm.hasError('required',['lastName'])">Enter Last Name</mat-error>
-                          </mat-form-field>
-
-                          <mat-form-field floatLabel="never">
-                            <input matInput placeholder="Email Id" [formControl]="email" autocomplete="off" required>
-                            <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
-                          </mat-form-field>
-
-                          <mat-form-field floatLabel="never">
-                            <input matInput placeholder="Password" formControlName="password" [type]="hide ? 'password' : 'text'" required>
-                            <mat-error *ngIf="registerForm.hasError('required',['password'])">Enter Password</mat-error>
-                            <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
-                          </mat-form-field>
-                          
-                          <mat-form-field floatLabel="never">
-                            <input matInput placeholder="Confirm password" formControlName="confirmPassword" [errorStateMatcher]="matcher" [type]="hide ? 'password' : 'text'">
-                            <mat-error *ngIf="registerForm.hasError('notSame');">Passwords do not match</mat-error>  
-                            <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
-                          </mat-form-field>
-
-                          <mat-form-field floatLabel="never">
-                            <mat-select  placeholder="Country">
-                              <mat-option>None</mat-option>
-                              <ng-container *ngFor ="let country of countries">
-                                <mat-option value="{{country.id}}">{{country.value}}</mat-option>
-                              </ng-container>
-                            </mat-select>
-                          </mat-form-field>
-
-                          <mat-form-field floatLabel="never">
-                              <input matInput placeholder="Mobile" formControlName="mobile" autocomplete="off" (keypress)="keyPress($event)" minlength=10 maxlength=10 required>
-                              <mat-error *ngIf="registerForm.hasError('required', ['mobile'])">Phone can not be empty.</mat-error>
-                              <mat-error *ngIf="registerForm.hasError('minlength',['mobile'])">Minimum 10 characters needed.</mat-error>
-                          </mat-form-field>
-                        <mat-checkbox color="primary">Read Terms &amp; conditions</mat-checkbox>
-                      </div>
-                    </mat-card-content>
-                    <mat-card-actions>
-                      <button type="submit" [disabled]="registerForm.invalid"  class="btn btn-block brand-btn text-white mb-2">Register</button>
-                    </mat-card-actions>
-                  </mat-card>
-            </form>
-          </div>
-        
+      <div class="col-md-6 mx-auto">
+        <iframe allow="microphone;" width="580" height="580" src="https://console.dialogflow.com/api-client/demo/embedded/ca8f0b3d-b202-49c5-b683-3cacd300455b"></iframe>
       </div>
     </div>
   </div>
