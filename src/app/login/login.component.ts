@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {FormControl, Validators} from '@angular/forms';
+import { FormControl, Validators } from '@angular/forms';
 declare var FB: any;
 @Component({
   selector: 'app-login',
@@ -13,7 +13,6 @@ export class LoginComponent implements OnInit {
   
   hide = true;
   email = new FormControl('', [Validators.required, Validators.email]);
-
   getErrorMessage() {
     return this.email.hasError('required') ? 'Email can not be empty' :
         this.email.hasError('email') ? 'Not a valid email' :
