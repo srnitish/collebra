@@ -368,13 +368,9 @@ MIT
 
 @angular/material/checkbox
 
-@angular/material/core
-
 @angular/material/card
 
 @angular/material/divider
-
-@angular/material/select
 
 @angular/material/bottom-sheet
 
